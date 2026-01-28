@@ -3,7 +3,7 @@ session_start();
 
 // only admin can access
 if (!isset($_SESSION['user_role']) || strtolower($_SESSION['user_role']) !== 'admin') {
-    header("Location: /booking_system/mengyao/pages/login.php");
+    header("Location: /UpdatedSecureWebApplication/booking_system/mengyao/pages/login.php");
     exit;
 }
 
@@ -38,7 +38,7 @@ if (isset($_GET['search'])) {
             <h1>TP AMC Booking System - Admin Dashboard</h1>
         </div>
         <div class="nav-bar-right">
-            <a href="/booking_system/mengyao/pages/logout.php">Logout</a>
+            <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/logout.php">Logout</a>
         </div>
     </div>
 

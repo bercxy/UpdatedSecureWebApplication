@@ -39,14 +39,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // redirect to the right pages based on role. e.g. admin gets redirected to admin dashboard page
             switch ($role) {
                 case 'admin':
-                    header('Location: /booking_system/mengyao/pages/adminDashboard.php'); //absolute path used for redirection
+                    header('Location: /UpdatedSecureWebApplication/booking_system/bernice/sample_project/pages/admin/view_all_bookings.php'); //absolute path used for redirection
                     exit;
                 case 'supervisor':
-                    header('Location: /booking_system/mengyao/pages/supervisor_dashboard.php'); //page to be coded by another teammate 
+                    header('Location: /UpdatedSecureWebApplication/booking_system/mengyao/pages/supervisor_dashboard.php'); //page to be coded by another teammate 
                     exit;
                 default:
-                    header('Location: /booking_system/hazel/index.php');  //page to be coded by another teammate 
-                    exit;
+                    header('Location: /UpdatedSecureWebApplication/booking_system/hazel/pages/homepage.php');
+                     exit;
+
                 }
             } else {
                 $error = "Invalid email or password."; // generic error is printed when user enters wrong password to prevent revealing which part was incorrect
@@ -71,8 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1>TP AMC Booking System</h1>
         </div>
         <div class="nav-bar-right">
-            <a href="/booking_system/mengyao/pages/login.php">Home</a>
-            <a href="/booking_system/mengyao/pages/about.php">About</a>
+            <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/login.php">Home</a>
+            <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/about.php">About</a>
         </div>
     </div>
 
@@ -90,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php endif; ?>
 
                 <!-- login form -->
-                <form method="POST" action="/booking_system/mengyao/pages/login.php">
+                <form method="POST" action="/UpdatedSecureWebApplication/booking_system/bernice/sample_project/pages/admin/view_all_bookings.php">
                     <label>Email:</label>
                     <input type="email" name="email" required>
 
@@ -98,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="password" name="password" required>
 
                     <button type="submit" class="login-btn">Login</button>
-                    <p>Don't have an account? <a href="/booking_system/mengyao/pages/requestAccount.php">Register here</a></p>
+                    <p>Don't have an account? <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/requestAccount.php">Register here</a></p>
                 </form>
             </div>
 

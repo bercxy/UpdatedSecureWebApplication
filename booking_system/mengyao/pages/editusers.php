@@ -3,7 +3,7 @@ session_start();
 
 // only admin can access this page, preventing unauthorized access and privilege escalation
 if (!isset($_SESSION['user_role']) || strtolower($_SESSION['user_role']) !== 'admin') {
-    header("Location: /booking_system/mengyao/pages/login.php");
+    header("Location: /UpdatedSecureWebApplication/booking_system/mengyao/pages/login.php");
     exit;
 }
 
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="nav-bar-right">
             <a href="adminDashboard.php">Back to Dashboard</a>
-            <a href="/booking_system/mengyao/pages/logout.php">Logout</a>
+            <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/logout.php">Logout</a>
         </div>
     </div>
 

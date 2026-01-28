@@ -29,12 +29,12 @@ CREATE TABLE IF NOT EXISTS products (
 -- INSERT SAMPLE DATA
 -- ========================================
 
-INSERT INTO products (name, price, description) VALUES
-    ('Laptop', 999.99, 'High-performance laptop with 16GB RAM and 512GB SSD'),
-    ('Wireless Mouse', 29.99, 'Ergonomic wireless mouse with USB receiver'),
-    ('Mechanical Keyboard', 79.99, 'RGB mechanical keyboard with Cherry MX switches'),
-    ('Monitor', 299.99, '27-inch 4K UHD monitor with HDR support'),
-    ('USB-C Hub', 49.99, '7-in-1 USB-C hub with multiple ports');
+INSERT INTO bookings
+(user_id, facility_id, booking_date, start_time, end_time, status)
+VALUES
+(2, 101, '2026-02-16', '09:00:00', '11:00:00', 'pending'),
+(3, 101, '2026-02-16', '11:00:00', '13:00:00', 'pending'),
+(4, 102, '2026-02-17', '10:00:00', '12:00:00', 'pending');
 
 -- ========================================
 -- VERIFICATION (Optional)

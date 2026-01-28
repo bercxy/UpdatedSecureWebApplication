@@ -8,6 +8,6 @@ $_SESSION = [];
 session_destroy();
 
 // redirect to login page using absolute path
-header("Location: /booking_system/mengyao/pages/login.php");
+header("Location: /UpdatedSecureWebApplication/booking_system/mengyao/pages/login.php");
 exit;
 ?>

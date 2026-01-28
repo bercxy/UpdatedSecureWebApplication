@@ -93,8 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1>TP AMC Booking System</h1>
         </div>
         <div class="nav-bar-right">
-            <a href="/booking_system/mengyao/pages/login.php">Home</a>
-            <a href="/booking_system/mengyao/pages/about.php">About</a>
+            <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/login.php">Home</a>
+            <a href="/UpdatedSecureWebApplication/booking_system/mengyao/pages/about.php">About</a>
         </div>
     </div>
 

@@ -3,7 +3,7 @@ session_start();
 
 // only admin can access
 if (!isset($_SESSION['user_role']) || strtolower($_SESSION['user_role']) !== 'admin') {
-    header("Location: /booking_system/mengyao/pages/login.php");
+    header("Location: /UpdatedSecureWebApplication/booking_system/mengyao/pages/login.php");
     exit;
 }
 
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Redirect back to dashboard
-    header("Location: /booking_system/mengyao/pages/adminDashboard.php");
+    header("Location: /UpdatedSecureWebApplication/booking_system/mengyao/pages/adminDashboard.php");
     exit;
 }
 
